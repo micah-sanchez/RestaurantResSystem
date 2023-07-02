@@ -9,7 +9,17 @@ function create(newReservation) {
 }
 
 //read
+function list() {
+    console.log("service")
+    return knex("reservations")
+        .select("*")
+}
 
 //update
 
 //delete
+
+module.exports = {
+    create, 
+    list,
+}
